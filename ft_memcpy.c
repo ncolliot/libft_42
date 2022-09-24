@@ -1,6 +1,5 @@
 // https://www.geeksforgeeks.org/write-memcpy/
-#include <stdio.h>
-#include <string.h>
+#include <libft.h>
 
 void    *ft_memcpy(char *dest, char *src, size_t n)
 {
@@ -12,8 +11,7 @@ void    *ft_memcpy(char *dest, char *src, size_t n)
         dest[i] = src[i];
         i++;
     }
-}
-
+}/*
 int main()
 {
     char    src1[] = "Hello";
@@ -28,5 +26,4 @@ int main()
     memcpy(dest2, src2, strlen(src2) + 1);
     printf("After memcpy dest = %s\n", dest2);
     return(0);
-
-}
+}*/

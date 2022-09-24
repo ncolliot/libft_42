@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <string.h>
+#include <libft.h>
 
 char    *ft_strchr(const char *str, int c)
 {
@@ -16,7 +15,7 @@ char    *ft_strchr(const char *str, int c)
             return(NULL);
         i++;
     }
-}
+}/*
 
 int main()
 {
@@ -29,4 +28,4 @@ int main()
     printf("String after |%c| is - |%s|\n", ch, ret);
    
     return(0);
-}
+}*/

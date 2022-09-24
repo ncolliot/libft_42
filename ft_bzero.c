@@ -11,8 +11,7 @@ void    ft_bzero(void *s, size_t n)
         *(char*)(s + i) = 0;
         i++;
     }
-}
-
+}/*
 int main()
 {
     char str[50] = "This is for the test!";
@@ -20,4 +19,4 @@ int main()
     bzero(str, strlen(str));
     printf("%s", str);
     return (0);
-}
+}*/

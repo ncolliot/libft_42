@@ -9,11 +9,11 @@
         ""
       ],
       "stopAtEntry": true,
-      "cwd": "/Users/ninoc.vinals/Library/Mobile Documents/iCloud~com~rhmsoft~icode/Documents/42 Madrid/libft/fonctions",
+      "cwd": "/Volumes/Extreme SSD/fonctions",
       "environment": [],
-      "program": "/Users/ninoc.vinals/Library/Mobile Documents/iCloud~com~rhmsoft~icode/Documents/42 Madrid/libft/fonctions/build/Debug/outDebug",
+      "program": "/Volumes/Extreme SSD/fonctions/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
-      "MIMode": "gdb",
+      "MIMode": "lldb",
       "externalConsole": false
     }
   ]

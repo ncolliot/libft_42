@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <string.h>
+#include <libft.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -22,7 +21,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	}
 	return(0);
-}
+}/*
 
 int main(void)
 {
@@ -31,4 +30,4 @@ int main(void)
 	printf("%s\n", strnstr(str, c, 15));
 	printf("%s\n", ft_strnstr(str, c, 15));
 	return(0);
-}
+}*/

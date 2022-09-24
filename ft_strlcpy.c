@@ -1,5 +1,6 @@
+#include <libft.h>
 
-size_t  strlcpy(char *dest, const char *src, const size_t len)
+size_t  ft_strlcpy(char *dest, const char *src, const size_t len)
 {
     size_t i;
     // size_t = unsigned integral type

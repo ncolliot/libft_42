@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <string.h>
+#include <libft.h>
+
 // this fonction compare the size ascii valor between two strings
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -14,8 +14,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 			return(*(unsigned char*)(s1 + i) - *((unsigned char*)s2 + i));
 	}
 	return(0);
-}
-
+}/*
 int main()
 {
 	char str[] = "This is for the test";
@@ -23,4 +22,4 @@ int main()
 	printf("%d\n", memcmp(str, c, strlen(str)));
 	printf("%d", ft_memcmp(str, c, strlen(str)));
 	return(0);
-}
+}*/

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <libft.h>
 
 char	*ft_strrchr(const char *str, char c)
 {
@@ -14,7 +14,7 @@ char	*ft_strrchr(const char *str, char c)
 		i--;
 	}
 	return (0);
-}
+}/*
 
 int main()
 {
@@ -27,4 +27,4 @@ int main()
     printf("String after |%c| is - |%s|\n", ch, ret);
    
     return(0);
-}
+}*/

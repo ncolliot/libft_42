@@ -1,13 +1,9 @@
-#include <stdio.h>
-#include <ctype.h>
+#include <libft.h>
 
 int	ft_isprint(int c)
 {
-	if(c >= 32 && c <= 126)
-		return(1);
-	else
-		return(0);
-}
+	return(c >= 32 && c <= 126);
+}/*
 
 int	main()
 {
@@ -32,4 +28,4 @@ int	main()
 	cha = '\t';
 	printf("ch5: %d\n", ft_isprint(cha));
 	printf("ch5: %d\n\n", isprint(cha));
-}
+}*/

@@ -1,6 +1,5 @@
 // https://www.geeksforgeeks.org/write-memcpy/
-#include <stdio.h>
-#include <string.h>
+#include <libft.h>
 
 void    *ft_memmove(char *dest, char *src, size_t n)
 {
@@ -19,7 +18,7 @@ void    *ft_memmove(char *dest, char *src, size_t n)
         dest[i] = temp[i];
         i++;
     }
-}
+}/*
 
 int main()
 {
@@ -32,4 +31,4 @@ int main()
     printf("%s\n", dest);
     printf("%s", dest1);
     return(0);
-}
+}*/

@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <string.h>
+#include <libft.h>
 
 void    *ft_memchr(const void *str, int c, size_t n)
 {
@@ -17,7 +16,7 @@ void    *ft_memchr(const void *str, int c, size_t n)
         i++;
     }
     return(NULL);
-}
+}/*
 
 int main()
 {
@@ -28,4 +27,4 @@ int main()
     ret = ft_memchr(str, ch, 5);
     printf("String after |%c| is - |%s|\n", ch, ret);
     return(0);
-}
+}*/
