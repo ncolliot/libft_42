@@ -1,42 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   atoi.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 14:16:13 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/26 14:16:14 by ncolliot         ###   ########.fr       */
+/*   Created: 2022/09/26 14:09:38 by ncolliot          #+#    #+#             */
+/*   Updated: 2022/09/26 14:09:41 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-char	*ft_strrchr(const char *str, char c)
+int	ft_atoi(const char *str)
 {
-	int	i;
+	int i;
+	int n;
+	int result;
 
 	i = 0;
-	while (str[i] != '\0')
+	n = 1;
+	result = 0;
+	while (str[i] <= 32)
 		i++;
-	while (i >= 0)
+	if (str[i] == '-')
 	{
-		if (str[i] == c)
-			return ((char *)str + i);
-		i--;
+		n = -1;
+		i++;
 	}
-	return (0);
-}/*
+	else if (str[i] == '+')
+		i++;
+	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
+	{
+		result *= 10;
+		result += str[i] - '0';
+		i++;
+	}
+	return (result * n);
+}
 
 int main()
 {
-    const char str[] = "http://www.tutorialspoint.com";
-    const char ch = '.';
-    char *ret;
-
-    ret = ft_strrchr(str, ch);
-
-    printf("String after |%c| is - |%s|\n", ch, ret);
-   
-    return(0);
-}*/
+	const char str[] = "12345";
+	printf("%d", ft_atoi(str));
+}
