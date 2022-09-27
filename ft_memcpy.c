@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 // https://www.geeksforgeeks.org/write-memcpy/
-#include <libft.h>
+#include "libft.h"
 
 void    *ft_memcpy(char *dest, char *src, size_t n)
 {
