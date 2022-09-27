@@ -6,30 +6,34 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:42 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/26 14:15:43 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/09/27 14:44:50 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// https://www.geeksforgeeks.org/write-memcpy/
 #include "libft.h"
 
-void    *ft_memmove(char *dest, char *src, size_t n)
+void    *ft_memmove(void *dst, const void *src, size_t len)
 {
-    int i;
-    char    temp[n];
+	size_t			i;
+	unsigned char	*a;
+	unsigned char	*b;
 
-    i = 0;
-    while(i < n)
-    {
-        temp[i] = src[i];
-        i++;
-    }
-    i = 0;
-    while(i < n)
-    {
-        dest[i] = temp[i];
-        i++;
-    }
+	i = 0;
+	a = (unsigned char *)dst;
+	b = (unsigned char *)src;
+	if (a > b)
+		while (i < len)
+		{
+			a[len - 1] = b[len - 1];
+			len--;
+		}
+	else
+		while (i < len)
+		{
+			a[i] = b[i];
+			i++;
+		}
+	return (dst);
 }/*
 
 int main()

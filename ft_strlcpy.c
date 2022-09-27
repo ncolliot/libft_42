@@ -6,25 +6,27 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:16:03 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/26 14:16:04 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/09/27 14:44:46 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  ft_strlcpy(char *dest, const char *src, const size_t len)
+size_t  ft_strlcpy(char *dst, const char *src, size_t size)
 {
-    size_t i;
-    // size_t = unsigned integral type
-    i = 0;
-    while(i < len - 1)
-    {
-        if(*src != "\0")
-            *dest++ = *src++;
-        else 
-            break;
-        i++;
-    }
-    *dest = "\0";
-    return(i);
+	size_t	i;
+
+	i = 0;
+	if (size > 0)
+	{
+		while (src[i] && i < (size - 1))
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = 0;
+	}
+	while (src[i])
+		i++;
+	return (i);
 }

@@ -6,23 +6,25 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:40 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/26 14:15:41 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/09/27 14:55:31 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// https://www.geeksforgeeks.org/write-memcpy/
 #include "libft.h"
 
-void    *ft_memcpy(char *dest, char *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while(i < n)
-    {
-        dest[i] = src[i];
-        i++;
-    }
+	if (dest == NULL && src == NULL)
+		return (dest);
+	i = 0;
+	while (i < n)
+	{
+		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+		i++;
+	}
+	return (dest);
 }/*
 int main()
 {
