@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:16:17 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/27 21:18:07 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/09/28 17:19:13 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = start;
 	j = 0;
 	if(!s || !(str = (char*)malloc(len + 1)))
-		return(0);
+		return(NULL);
 	while(j < len && i < ft_strlen(s))
 	{
 		str[j++] = s[i++];

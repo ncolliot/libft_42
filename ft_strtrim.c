@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 12:25:35 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/28 12:26:23 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/09/28 13:01:37 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	j = ft_strlen(s1);
-	str = 0;
+	str = NULL;
 	if (s1 != 0 && set != 0)
 	{
 		while (s1[i] && ft_strchr(set, s1[i]))

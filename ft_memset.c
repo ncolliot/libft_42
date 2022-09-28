@@ -11,7 +11,7 @@ void	*ft_memset(void *s, int c, size_t n)
 		i++;
 	}
 	return (s);
-}
+}/*
 
 int main()
 {
@@ -20,3 +20,4 @@ int main()
     printf("%s", str);
     return(0);
 }
+*/
