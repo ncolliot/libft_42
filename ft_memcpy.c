@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:40 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/27 14:55:31 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/09/28 11:34:25 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,13 @@ int main()
     char    src1[] = "Hello";
     char    dest1[] = "World";
     printf("Before memcpy dest = %s\n", dest1);
-    ft_memcpy(dest1, src1, strlen(src1) + 1);
+    ft_memcpy(dest1, src1, ft_strlen(src1) + 1);
     printf("After memcpy dest = %s\n\n", dest1);
 
     char src2[] = "Hello";
     char dest2[] = "World";
     printf("Before memcpy dest = %s\n", dest2);
-    memcpy(dest2, src2, strlen(src2) + 1);
+    memcpy(dest2, src2, ft_strlen(src2) + 1);
     printf("After memcpy dest = %s\n", dest2);
     return(0);
 }*/

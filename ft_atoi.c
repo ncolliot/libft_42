@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   atoi.c                                             :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:09:38 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/26 14:09:41 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/09/28 12:28:39 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int i;
-	int n;
-	int result;
+	int	i;
+	int	n;
+	int	result;
 
 	i = 0;
 	n = 1;
@@ -38,9 +38,9 @@ int	ft_atoi(const char *str)
 	}
 	return (result * n);
 }
-
+/*
 int main()
 {
 	const char str[] = "12345";
 	printf("%d", ft_atoi(str));
-}
+}*/
