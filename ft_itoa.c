@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 15:41:02 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/29 13:14:32 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/09/30 14:49:28 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ static size_t	ft_numlen(int n)
 		len++;
 		n /= 10;
 	}
-	printf("%zu\n", len); // <-- delete this line 
 	return (len);
 }	
 
@@ -65,7 +64,7 @@ char	*ft_itoa(int n)
 /*
 int	main(void)
 {
-	int num = 58645;
+	int	num = 5864;
 	printf("%s\n", ft_itoa(num));
 	return(0);
 }*/
