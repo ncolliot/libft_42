@@ -22,7 +22,7 @@ int	ft_tolower(int c)
 /*
 int main()
 {
-    char a = 'R';
+    char a = 'E';
     printf("%c\n", a);
     printf("%c", ft_tolower(a));
     return(0);
