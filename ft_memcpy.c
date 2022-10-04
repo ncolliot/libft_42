@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:40 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/28 11:34:25 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 14:23:23 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		i++;
 	}
 	return (dest);
-}/*
+}
+/*
 int main()
 {
     char    src1[] = "Hello";

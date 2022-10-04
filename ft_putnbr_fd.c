@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 17:36:51 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/29 19:47:43 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 14:38:43 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n > 2147483647 || n < -2147483648)
-		return;
+		return ;
 	if (n == -2147483648)
 	{
 		ft_putstr_fd("-2147483648", fd);
-		return;
+		return ;
 	}
 	if (n < 0)
 	{
@@ -29,9 +29,9 @@ void	ft_putnbr_fd(int n, int fd)
 	if (n < 10)
 	{
 		ft_putchar_fd(n + '0', fd);
-		return;
+		return ;
 	}
 	ft_putnbr_fd(n / 10, fd);
 	ft_putchar_fd((n % 10) + '0', fd);
-	return;
+	return ;
 }

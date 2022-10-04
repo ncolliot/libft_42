@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:28 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/30 14:49:56 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 14:25:42 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 int	ft_isprint(int c)
 {
-	return(c >= 32 && c <= 126);
-}/*
+	return (c >= 32 && c <= 126);
+}
+/*
 
 int	main()
 {

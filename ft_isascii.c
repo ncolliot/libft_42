@@ -6,13 +6,13 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:22 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/26 14:15:23 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 14:26:24 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c < 128);
 }

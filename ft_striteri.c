@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 15:41:49 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/30 15:02:24 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 14:31:58 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned	i;
+	unsigned int	i;
 
 	i = 0;
 	if (s != NULL && f != NULL)

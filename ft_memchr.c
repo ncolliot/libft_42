@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:32 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/28 11:27:41 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 14:13:12 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		n--;
 	}
 	return (NULL);
-}/*
+}
+/*
 
 int main()
 {

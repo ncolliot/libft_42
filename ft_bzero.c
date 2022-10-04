@@ -6,23 +6,24 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:09:15 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/26 14:09:20 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 14:29:00 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    size_t	i;
+	size_t	i;
 
-    i = 0;
-    while(i < n)
-    {
-        *(char*)(s + i) = 0;
-        i++;
-    }
-}/*
+	i = 0;
+	while (i < n)
+	{
+		*(char *)(s + i) = 0;
+		i++;
+	}
+}
+/*
 int main()
 {
     char str[50] = "This is for the test!";

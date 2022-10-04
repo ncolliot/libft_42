@@ -6,13 +6,13 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:25 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/26 14:15:27 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 15:41:01 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }

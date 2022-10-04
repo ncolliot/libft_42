@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/04 14:03:02 by ncolliot          #+#    #+#             */
+/*   Updated: 2022/10/04 14:03:10 by ncolliot         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
@@ -11,8 +23,8 @@ void	*ft_memset(void *s, int c, size_t n)
 		i++;
 	}
 	return (s);
-}/*
-
+}
+/*
 int main()
 {
     char str[] = "For the test";
