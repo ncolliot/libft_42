@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:16:22 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/27 15:07:35 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 12:00:10 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 
 int	ft_tolower(int c)
 {
-	if(c >= 'A' && c <= 'Z') // condition that change the character
-		return(c + 32);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
 	else
-		return(c); // unchanged character
-}/*
+		return (c);
+}
+/*
 int main()
 {
     char a = 'R';

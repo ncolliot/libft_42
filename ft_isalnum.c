@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:14:56 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/26 14:14:57 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/04 12:11:19 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
