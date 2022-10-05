@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 14:03:02 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/04 14:03:10 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/05 12:16:48 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,10 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 /*
-int main()
+int main(void)
 {
     char str[] = "For the test";
 	ft_memset(str, '.', 7);
     printf("%s", str);
     return(0);
-}
-*/
+}*/

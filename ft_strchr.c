@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:50 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/04 14:14:24 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/05 12:34:58 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@ char	*ft_strchr(const char *s, int c)
 }
 /*
 
-int main()
+int main(void)
 {
-    const char str[] = "http://www.google.com";
-    const char ch = ':';
-    char *ret;
+	const char str[] = "http://www.google.com";
+	const char ch = ':';
+	char *ret;
 
-    ret = ft_strchr(str, ch);
+	ret = ft_strchr(str, ch);
 
-    printf("String after |%c| is - |%s|\n", ch, ret);
-   
-    return(0);
+	printf("String after |%c| is - |%s|\n", ch, ret);
+
+	return(0);
 }*/
