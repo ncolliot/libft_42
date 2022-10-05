@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:50 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/05 12:34:58 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/05 12:57:22 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ char	*ft_strchr(const char *s, int c)
 	return (ft_memchr(s, c, ft_strlen(s) + 1));
 }
 /*
-
 int main(void)
 {
 	const char str[] = "http://www.google.com";
