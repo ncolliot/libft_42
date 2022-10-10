@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:32 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/04 14:13:12 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/10 17:04:44 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 int main()
 {
-    const char str[] = "http://www.tutorialspoint.com";
+    const char str[] = "http://www.google.com";
     const char ch = ':';
     char *ret;
 
