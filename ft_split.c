@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 12:43:37 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/11 09:58:06 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/11 10:02:51 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,10 +86,10 @@ char	**ft_split(char const *s, char c)
 		return (0);
 	num_words = ft_count_words(s, c);
 	s2 = (char **)malloc(sizeof(char *) * (num_words + 1));
-	if (!s2)
-		return (0);
-	ft_split_words(s, c, s2, num_words);
-	return (s2);
+	if (s2 != NULL)
+		ft_split_words(s, c, s2, num_words);
+		return (s2);
+	return (0);
 }
 /*
 int main(void)
