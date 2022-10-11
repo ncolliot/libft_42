@@ -6,19 +6,19 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 15:41:02 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/04 12:04:37 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/08 20:05:15 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_numlen(int n)
+static int	ft_numlen(int n)
 {
-	size_t	len;
+	int	len;
 
 	len = 0;
 	if (n == -2147483648)
-		n = -2147483647;
+		n--;
 	if (n <= 0)
 	{
 		n *= -1;
@@ -26,8 +26,8 @@ static size_t	ft_numlen(int n)
 	}
 	while (n > 0)
 	{
+		n = n / 10;
 		len++;
-		n /= 10;
 	}
 	return (len);
 }	
@@ -62,7 +62,7 @@ char	*ft_itoa(int n)
 /*
 int	main(void)
 {
-	int	num = 5864;
+	int	num = 5625;
 	printf("%s\n", ft_itoa(num));
 	return(0);
 }*/

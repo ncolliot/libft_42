@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:16:13 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/04 14:16:51 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/07 16:09:56 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strrchr(const char *s, int c)
 
 int main()
 {
-    const char str[] = "http://www.tutorialspoint.com";
+    const char str[] = "http://www.google.com";
     const char ch = '.';
     char *ret;
 

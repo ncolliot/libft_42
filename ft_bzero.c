@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:09:15 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/10 16:54:45 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/11 10:16:36 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,16 @@ void	ft_bzero(void *s, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		*(char *)(s + i) = 0;
+		*(char *)(s + i) = '\0';
 		i++;
 	}
 }
 /*
 int main()
 {
-    char str[50] = "This is for the test!";
+    char str[] = "This is for the test!";
+    printf("%s\n", str);
+    ft_bzero(str, 1);
     printf("%s\n", str);
 	ft_bzero(str, 1);
     printf("%s\n", str);
