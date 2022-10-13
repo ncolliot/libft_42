@@ -19,12 +19,12 @@ INCLUDE = libft.h
 
 all: $(NAME)
 
-$(NAME): $(OBJS) ${INCLUDE}
-	@ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 clean:
-	@${ERASE} ${OBJS}
+	${ERASE} ${OBJS}
 fclean:
-	@${ERASE} ${OBJS} ${NAME}
+	${ERASE} ${OBJS} ${NAME}
 
 re: fclean all
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:09:38 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/28 17:15:58 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/13 20:11:35 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,26 +21,30 @@ int	ft_atoi(const char *str)
 	i = 0;
 	n = 1;
 	result = 0;
-	while ((*str >= '\t' && *str <= '\r') || *str == ' ')
-		str++;
-	if (*str == '-')
+	while ((str[i] >= '\t' && str[i] <= '\r') || str[i] == ' ')
+		i++;
+	if (str[i] == '-')
 	{
 		n = -1;
-		str++;
+		i++;
 	}
-	else if (*str == '+')
-		str++;
-	while (*str != '\0' && *str >= '0' && *str <= '9')
+	else if (str[i] == '+')
+		i++;
+	if (str[i] > 2147483647 && n == 1)
+		return (0);
+	else if (str[i] < 2147483647 && n == -1)
+		return (-1);
+	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
 	{
 		result *= 10;
-		result += *str - '0';
-		str++;
+		result += str[i] - '0';
+		i++;
 	}
 	return (result * n);
 }
-/*
+
 int main()
 {
 	const char str[] = "12345";
 	printf("%d", ft_atoi(str));
-}*/
+}

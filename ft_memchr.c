@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:32 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/11 10:16:49 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/13 19:37:09 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 /*
-
 int main()
 {
     const char str[] = "http://www.google.com";
@@ -34,4 +33,5 @@ int main()
     ret = ft_memchr(str, ch, 5);
     printf("String after |%c| is - |%s|\n", ch, ret);
     return(0);
-}*/
+}
+*/

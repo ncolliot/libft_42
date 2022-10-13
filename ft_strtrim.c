@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 12:25:35 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/09/28 13:01:37 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/13 18:00:19 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	j = ft_strlen(s1);
 	str = NULL;
-	if (s1 != 0 && set != 0)
+	if (s1 != '\0' && set != '\0')
 	{
 		while (s1[i] && ft_strchr(set, s1[i]))
 			i++;
