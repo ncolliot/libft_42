@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 12:43:37 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/11 10:02:51 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/13 13:37:53 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,10 @@ static int	ft_count_words(char const *str, char c)
 			count++;
 			while (str[i] && str[i] != c)
 				i++;
+		printf("i = %d\n", i);
 		}
 	}
+	printf("count = %d\n", count);
 	return (count);
 }
 
@@ -45,6 +47,7 @@ static char	*ft_putword(char *word, char const *s, int i, int word_len)
 		word_len--;
 	}
 	word[j] = '\0';
+	printf("word = %s\n", word);
 	return (word);
 }
 
@@ -53,6 +56,7 @@ static char	**ft_split_words(char const *s, char c, char **s2, int num_words)
 	int	i;
 	int	word;
 	int	word_len;
+	char *tmp;
 
 	i = 0;
 	word = 0;
@@ -74,6 +78,8 @@ static char	**ft_split_words(char const *s, char c, char **s2, int num_words)
 		word++;
 	}
 	s2[word] = 0;
+	tmp = *s2;
+	printf("s2 = %s\n", tmp);
 	return (s2);
 }
 
@@ -82,21 +88,23 @@ char	**ft_split(char const *s, char c)
 	char			**s2;
 	int				num_words;
 
-	if (!s)
-		return (0);
+	if (s == NULL)
+		return (NULL);
 	num_words = ft_count_words(s, c);
 	s2 = (char **)malloc(sizeof(char *) * (num_words + 1));
 	if (s2 != NULL)
+	{
 		ft_split_words(s, c, s2, num_words);
 		return (s2);
+	}
 	return (0);
 }
-/*
+
 int main(void)
 {
 	char str[] = "it's for the test";
-	char c = 'e';
+	char c = 's';
 	char *final = *ft_split(str, c);
 	printf("%s\n", final);
 	return (0);
-}*/
+}
