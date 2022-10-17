@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:16:10 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/04 15:44:34 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/17 22:09:36 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,34 +14,34 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
-	int		j;
+	unsigned int		i;
+	unsigned int		j;
 
-	if (*needle == '\0')
+	if (needle[0] == '\0')
 		return ((char *)haystack);
 	i = 0;
-	while (haystack[i] != '\0' && i < len)
+	while (haystack[i] && i < len)
 	{
-		if (haystack[i] == needle[0])
+		j = 0;
+		if (haystack[i] == needle[j])
 		{
-			j = 0;
-			while (needle[j] && haystack[i + j] && i + j < len
-				&& haystack[i + j] == needle[j])
+			while (i + j < len && haystack[i + j] == needle[j])
+			{
 				j++;
-			if (needle[j] == '\0')
-				return ((char *)haystack + i);
+				if (!needle[j])
+					return ((char *)&haystack[i]);
+			}
 		}
 		i++;
 	}
 	return (0);
 }
 /*
-
 int main(void)
 {
 	char str[] = "This is for the test";
-	char c[] = "the";
-	printf("%s\n", strnstr(str, c, 15));
-	printf("%s\n", ft_strnstr(str, c, 15));
+	char c[] = "";
+	printf("%s\n", strnstr(str, c, 0));
+	printf("%s\n", ft_strnstr(str, c, 0));
 	return(0);
 }*/

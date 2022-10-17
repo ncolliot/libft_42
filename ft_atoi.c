@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:09:38 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/17 13:57:49 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/17 22:18:06 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,11 @@ int	ft_atoi(const char *str)
 		result += str[i] - '0';
 		i++;
 	}
-	if (result >= 2147483646 && n == 1)
-		return (0);
-	else if (result <= 2147483647 && n == -1)
-		return(-1);
 	return (result * n);
 }
-
+/*
 int main()
 {
 	const char str[] = "12345";
 	printf("%d", ft_atoi(str));
-}
+}*/
