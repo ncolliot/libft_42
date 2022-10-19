@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:09:57 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/18 00:16:36 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/19 18:56:22 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	i;
 
 	i = 0;
+	if (count * size < count && count * size < size)
+		return (0);
 	memo = malloc(count * size);
 	if (memo == NULL)
 		return (0);

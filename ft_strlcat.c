@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 13:57:36 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/18 01:08:41 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:41:13 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	j = 0;
 	while (dst[i] && i < size)
 		i++;
+	if (i == size)
+		return (i + ft_strlen(src));
 	while (src[j] && (i + j + 1) < size)
 	{
 		dst[i + j] = src[j];
@@ -28,5 +30,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	if (i < size)
 		dst[i + j] = '\0';
-	return (i + ft_strlen(src));
+	return (i + j);
 }

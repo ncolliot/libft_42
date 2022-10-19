@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:09:38 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/17 22:18:06 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:24:58 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	n;
-	int	result;
+	unsigned	int	result;
+	int				i;
+	int				n;
 
 	i = 0;
 	n = 1;
@@ -35,8 +35,12 @@ int	ft_atoi(const char *str)
 		result *= 10;
 		result += str[i] - '0';
 		i++;
+		if (result > 2147483647 && n == 1)
+			return (-1);
+		if (result > 2147483648 && n == -1)
+			return (0);
 	}
-	return (result * n);
+	return ((int)result * n);
 }
 /*
 int main()

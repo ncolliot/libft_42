@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 12:25:35 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/13 18:00:19 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:14:58 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*str;
 
 	i = 0;
+	if (!s1)
+		return (0);
 	j = ft_strlen(s1);
 	str = NULL;
 	if (s1 != '\0' && set != '\0')
