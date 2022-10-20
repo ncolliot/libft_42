@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:09:57 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/19 18:56:22 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/20 15:10:00 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	*ft_calloc(size_t count, size_t size)
 		return (0);
 	while (i < count * size)
 	{
-		memo[i++] = 0;
+		memo[i] = 0;
+		i++;
 	}
 	return (memo);
 }

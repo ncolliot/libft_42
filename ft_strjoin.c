@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncolliot <ncolliot@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:15:54 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/19 18:52:24 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/20 13:44:03 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	j;
 
-	if (s1 != NULL &&  s2 != NULL)
+	if (s1 != NULL && s2 != NULL)
 	{
 		str = malloc(sizeof(*s1) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 		if (str != NULL)
@@ -34,5 +34,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 			return (str);
 		}
 	}
-		return (NULL);
-	}
+	return (NULL);
+}
