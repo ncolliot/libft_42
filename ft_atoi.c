@@ -6,11 +6,21 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:09:38 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/20 13:50:51 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/10/21 03:10:47 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_max_and_min(unsigned int res, int sign)
+{
+	if (res > 2147483647 && sign == 1)
+		return (-1);
+	if (res > 2147483648 && sign == -1)
+		return (0);
+	else
+		return ((int)res * sign);
+}
 
 int	ft_atoi(const char *str)
 {
@@ -33,14 +43,9 @@ int	ft_atoi(const char *str)
 	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
 	{
 		result *= 10;
-		result += str[i] - '0';
-		i++;
+		result += str[i++] - '0';
 	}
-	if (result > 2147483647 && n == 1)
-			return (-1);
-	if (result > 2147483648 && n == -1)
-			return (0);
-	return ((int)result * n);
+	return (ft_max_and_min(result, n));
 }
 /*
 int main()
