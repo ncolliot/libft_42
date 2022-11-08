@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:16:26 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/04 14:22:23 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/11/08 10:35:47 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	if (c >= 97 && c <= 122)
+	if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	return (c);
 }
