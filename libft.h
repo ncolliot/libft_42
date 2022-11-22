@@ -6,14 +6,13 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 18:36:18 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/11 10:51:19 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/11/21 12:48:19 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <string.h>
 # include <ctype.h>
 # include <stdlib.h>

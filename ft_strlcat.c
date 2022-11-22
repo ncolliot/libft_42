@@ -6,7 +6,7 @@
 /*   By: ncolliot <ncolliot@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 13:57:36 by ncolliot          #+#    #+#             */
-/*   Updated: 2022/10/20 13:37:32 by ncolliot         ###   ########.fr       */
+/*   Updated: 2022/11/21 11:01:10 by ncolliot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	j;
-	size_t	srclen;
 
 	i = 0;
 	j = 0;
