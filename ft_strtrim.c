@@ -26,14 +26,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, 0, i + 1));
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int		main()
 {
 	char *str = "NinoColliot";
-	char *out = "Nin";
+	char *out = "ino";
 	char *j;
 	j = ft_strtrim(str, out);
 	printf("%s\n", str);
 	printf("%s\n", j);
-}
+}*/
